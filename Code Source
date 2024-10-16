@@ -1,0 +1,37 @@
+#import random
+import random
+
+print("Bienvenue dans le monde du mystere")
+print("La regle du jeu est tres simple")
+print("Vous l'ordinateur choisi un nombre au hasard et vous devez trouver ce nombre")
+
+#boucle rejouer
+while True:
+    nombre_mystere = random.randint(0,20)
+    essaie = 3
+
+    
+    while essaie > 0:
+        user_input = int(input("Veuillez donnez un nombre entre 0 et 20: "))
+        essaie -= 1
+
+
+        if user_input < nombre_mystere:
+            print("Desoler c'est trop petit")
+            print(f"Il te reste {essaie} essaie")
+        elif user_input > nombre_mystere:
+            print("Desoler c'est trop grand")
+            print(f"Il te reste {essaie} essaie")
+        else:
+            print("Bravo tu as reussi")
+            break
+        
+
+    if essaie == 0:
+            print(f"Désolé, vous avez perdu. Le nombre mystère était {nombre_mystere}.")
+            
+    rejouer =  input("Veux tu rejouer (oui/non) : ").lower()
+    if rejouer != "oui":
+        print("Merci d'avoir joue")
+        break
+
