@@ -3,7 +3,7 @@ import random
 
 print("Bienvenue dans le monde du mystere")
 print("La regle du jeu est tres simple")
-print("Vous l'ordinateur choisi un nombre au hasard et vous devez trouver ce nombre")
+print("L'ordinateur choisi un nombre au hasard et vous devez trouver ce nombre")
 
 #boucle rejouer
 while True:
